@@ -63,4 +63,6 @@ app.use((error, req, res, next) => {
 
 const PORT = process.env.port || 8000
 
-app.listen(PORT)
+app.listen(PORT, ()=> {
+  console.log(`Now listening on port ${PORT}`)
+})
